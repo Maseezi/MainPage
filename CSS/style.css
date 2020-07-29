@@ -292,13 +292,25 @@ body{
 }
 
 .story{
-	background: #ddd;
+	display:flex;
+	background: white;
 	border-top: 1px solid #ddd;
 	border-bottom: 1px solid #ddd;
+	padding:5px;
 	overflow: scroll;
 }
+.story-item{
+	vertical-align:top;
+	display: inline-block;
+	text-align: center;
+}
+
+.st-text{
+	display:block;
+}
 	
-.img-header{
+	
+.story-item img{
     border: 2px solid blue;
     padding: 2px;
     position: relative;
@@ -312,12 +324,13 @@ body{
     float: center;
     cursor: pointer;
 }
-.user-header{
+.user-story img{
     padding: 2px;
+	border: 2px solid #ddd;
     position: relative;
     border-radius: 50%;
-    width: 45px;
-    height: 45px;
+    width: 50px;
+    height: 50px;
     margin-left: 0.8em;
     margin-right: 0.8em;
     margin-top: 1%;
@@ -426,6 +439,7 @@ body{
 	font-size: 16px;
 	font-weight: 500;
 	margin: 0;
+	margin-bottom: 1em;
 	padding: 5px;
 }
 
@@ -444,7 +458,7 @@ body{
 	text-align: justify;
 	padding: 5px;
 	border: 1px gray;
-	margin: 0.7px;
+	margin: auto;
 	background: white;
 	line-height: 110%;
 	word-wrap: normal;
@@ -456,17 +470,19 @@ body{
 	height: 55px;
 }
 .suggest-item .item-txt{
-	font-size: 12px;
+	font-size: 13px;
+	display: block;
+	justify-content: center;
 }
 
 .suggest-item button{
-	margin-top: 16px;
+	margin-top: 18px;
 	background-color: #3989F0;
 	padding: 2px;
 	border-radius: 3px 3px 3px 3px;
-	width: 60%;
+	width: 70%;
 	color: white;
-	font-weight: 400;
+	font-weight: 500;
 	cursor: pointer;
 }
 	

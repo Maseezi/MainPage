@@ -53,10 +53,6 @@ document.querySelector(".container-wrap").addEventListener("click", function () 
 })
 
 
-document.querySelector('.sidebar').addEventListener('touchmove', function (e) {
-    e.preventDefault();
-}, false);
-
 document.querySelector(".sidebar .down").addEventListener("click", function () {
     this.classList.toggle("rotate-arrow")
 })
