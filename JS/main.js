@@ -33,14 +33,14 @@ var removeBlurBackground = function () {
 
 
 // sidebar open
-document.querySelector(".mobile-header .me-icon").addEventListener("click", function () {
+/*document.querySelector(".mobile-header .me-icon").addEventListener("click", function () {
     var sidebar = document.querySelector(".sidebar")
     sidebar.style.left = 0;
     sidebar.style.top = 0;
 
     // blur background
     blurBackground();
-})
+})*/
 
 // sidebar close
 document.querySelector(".container-wrap").addEventListener("click", function () {
@@ -99,13 +99,6 @@ function moveTouch(e) {
             sidebar.style.top = "";
             //un blur background
             removeBlurBackground();
-        } else {
-            // swiped right
-            sidebar.style.left = 0;
-            sidebar.style.top = 0;
-
-            // blur background
-            blurBackground();
         }
     } else {
         // sliding vertically
@@ -147,10 +140,7 @@ function moveTouch2(e) {
             //un blur background
             removeBlurBackground();
         } else {
-            // swiped right
-            sidebar.style.left = 0;
-            sidebar.style.top = 0;
-
+            
             // blur background
 
             blurBackground();
